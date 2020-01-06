@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Menu desplegable</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.navegacion{
+			width: 1000px;
+			background: #fff;
+			border-radius: 6px;
+			margin: 30px auto;
+		}
+		.navegacion > ul{
+			list-style-type: none;
+		}
+		.menu > li{
+			display: inline-block;
+			position: relative;
+		}
+		body{
+			background: #000;
+		}
+		.menu > li > a{
+			text-decoration: none;
+			display: block;
+			padding: 15px;
+			color: grey;
+		}
+		.menu > li > a:hover{
+			color: #000;
+			transition: all 1.2s;
+		}
+		.submenu{
+			position: absolute;
+			width: 115%;
+			background: #4C4C4C;
+			display: none;
+		}
+		.submenu > li{
+			list-style-type: none;
+			padding: 10px;
+
+		}
+		.submenu > li > a{
+			text-decoration: none;
+			color: #FFF;
+		}
+		.submenu > li > a:hover{
+			color:#000;
+			transition: all 1.2s;
+		}
+		.menu > li:hover .submenu{
+			display: block;
+		}
+		.fondos:nth-child(even){
+			background:#858484;
+		}
+	</style>
+</head>
+<body>
+	<header>Menú desplegable</header>
+	<!--HTML del menú abajo-->
+	<nav class="navegacion">
+		<ul class="menu">
+			<li><a href="#">Inicio</a>
+				<ul class="submenu">
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Inicio</a>
+				<ul class="submenu">
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Inicio</a>
+				<ul class="submenu">
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Inicio</a>
+				<ul class="submenu">
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+					<li class="fondos"><a href="#">Inicio</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
